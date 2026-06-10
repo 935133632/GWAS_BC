@@ -1,0 +1,113 @@
+## African-ancestry specific meta-analysis
+
+
+AVERAGEFREQ ON
+MINMAXFREQ ON
+
+SEPARATOR TAB
+SCHEME STDERR
+
+GENOMICCONTROL OFF
+
+MARKER SNP
+ALLELE TEST OTHER
+EFFECT BETA
+STDERR SE
+PVALUE P
+FREQLABEL TEST_FREQ
+
+CUSTOMVARIABLE TotalSampleSize
+LABEL TotalSampleSize as N
+CUSTOMVARIABLE TotalCase
+LABEL TotalCase as N_CASE
+
+PROCESS /panfs/accrepfs.vampire/data/sbcs/guoz18/GWASsummary/Cancer/Breast_cancer/AFR/Uniq_Rep_AABCG_AFR_METAL.tsv.gz
+PROCESS /panfs/accrepfs.vampire/data/sbcs/guoz18/GWASsummary/Cancer/Breast_cancer/AFR/Uniq_Rep_JCS_AFR_METAL.tsv.gz
+PROCESS /panfs/accrepfs.vampire/data/sbcs/guoz18/GWASsummary/Cancer/Breast_cancer/AFR/Uniq_Rep_MVP_AFR_METAL.tsv.gz
+PROCESS /panfs/accrepfs.vampire/data/sbcs/guoz18/GWASsummary/Cancer/Breast_cancer/AFR/Uniq_Rep_PanUKBB_AFR_METAL.tsv.gz
+
+ANALYZE HETEROGENEITY
+
+
+
+
+
+
+## Asian-ancestry specific meta-analysis
+
+AVERAGEFREQ ON 
+MINMAXFREQ ON 
+
+SEPARATOR TAB
+SCHEME STDERR
+
+GENOMICCONTROL OFF
+
+MARKER SNP
+ALLELE TEST OTHER
+EFFECT BETA
+STDERR SE
+PVALUE P
+FREQLABEL TEST_FREQ
+
+CUSTOMVARIABLE TotalSampleSize
+LABEL TotalSampleSize as N
+CUSTOMVARIABLE TotalCase
+LABEL TotalCase as N_CASE
+
+PROCESS /panfs/accrepfs.vampire/data/sbcs/guoz18/GWASsummary/Cancer/Breast_cancer/ASN/1pct/Uniq_METAL_input_MEGA_BC_HCES-1.tsv.gz
+PROCESS /panfs/accrepfs.vampire/data/sbcs/guoz18/GWASsummary/Cancer/Breast_cancer/ASN/1pct/Uniq_METAL_input_MEGA_BC_KPOP-BRCA.tsv.gz
+PROCESS /panfs/accrepfs.vampire/data/sbcs/guoz18/GWASsummary/Cancer/Breast_cancer/ASN/1pct/Uniq_METAL_input_rep_KoGES.tsv.gz
+PROCESS /panfs/accrepfs.vampire/data/sbcs/guoz18/GWASsummary/Cancer/Breast_cancer/ASN/1pct/Uniq_Rep_MEGA_BC_HCES_1.tsv.gz
+PROCESS /panfs/accrepfs.vampire/data/sbcs/guoz18/GWASsummary/Cancer/Breast_cancer/ASN/1pct/Uniq_Rep_MEGA_BC_KPOP-BRCA.tsv.gz
+PROCESS /panfs/accrepfs.vampire/data/sbcs/guoz18/GWASsummary/Cancer/Breast_cancer/ASN/1pct/Uniq_Rep_BCAC_ASN_METAL.tsv.gz
+PROCESS /panfs/accrepfs.vampire/data/sbcs/guoz18/GWASsummary/Cancer/Breast_cancer/ASN/1pct/Uniq_Rep_BJJ.tsv.gz
+PROCESS /panfs/accrepfs.vampire/data/sbcs/guoz18/GWASsummary/Cancer/Breast_cancer/ASN/1pct/Uniq_Rep_SH_Affy.tsv.gz
+PROCESS /panfs/accrepfs.vampire/data/sbcs/guoz18/GWASsummary/Cancer/Breast_cancer/ASN/1pct/Uniq_Rep_SH_MEGA.tsv.gz
+PROCESS 
+ANALYZE HETEROGENEITY
+
+
+
+
+
+
+## European-ancestry specific meta-analysis
+
+
+AVERAGEFREQ ON
+MINMAXFREQ ON
+
+SEPARATOR TAB
+SCHEME STDERR
+
+GENOMICCONTROL OFF
+
+MARKER SNP
+ALLELE TEST OTHER
+EFFECT BETA
+STDERR SE
+PVALUE P
+FREQLABEL TEST_FREQ
+
+CUSTOMVARIABLE TotalSampleSize
+LABEL TotalSampleSize as N
+CUSTOMVARIABLE TotalCase
+LABEL TotalCase as N_CASE
+
+PROCESS /panfs/accrepfs.vampire/data/sbcs/guoz18/GWASsummary/Cancer/Breast_cancer/EUR/Uniq_Rep_BCAC_EUR.tsv.gz
+PROCESS /panfs/accrepfs.vampire/data/sbcs/guoz18/GWASsummary/Cancer/Breast_cancer/EUR/Uniq_Rep_FinnGen_EUR.tsv.gz
+PROCESS /panfs/accrepfs.vampire/data/sbcs/guoz18/GWASsummary/Cancer/Breast_cancer/EUR/Uniq_Rep_MGI_EUR_METAL.tsv.gz
+PROCESS /panfs/accrepfs.vampire/data/sbcs/guoz18/GWASsummary/Cancer/Breast_cancer/EUR/Uniq_Rep_MVP_EUR.tsv.gz
+PROCESS /panfs/accrepfs.vampire/data/sbcs/guoz18/GWASsummary/Cancer/Breast_cancer/EUR/Uniq_Rep_PanUKBB_EUR_METAL.tsv.gz
+
+ANALYZE HETEROGENEITY
+
+
+
+
+
+
+
+
+
