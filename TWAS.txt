@@ -1,0 +1,19 @@
+### Run SPrediXcan
+## Install environment for SPrediXcan
+module load StdEnvACCRE/2023 miniconda3/23.9.0-0
+#conda env create -f  /data/sbcs/data/damon/tools/MetaXcan/software/conda_env.yaml
+source activate imlabtools
+
+
+/data/sbcs/data/damon/tools/MetaXcan/software/SPrediXcan.py \
+--model_db_path /panfs/accrepfs.vampire/data/sbcs/pingj2/TWAS/PrediXcan/EUR_Female/Breast_Mammary_Tissue/Breast_Mammary_Tissue_EUR_Female_PrediXcan.db \
+--covariance /panfs/accrepfs.vampire/data/sbcs/pingj2/TWAS/PrediXcan/EUR_Female/Breast_Mammary_Tissue/Breast_Mammary_Tissue_EUR_Female_PrediXcan_Covs.txt \
+--gwas_folder /panfs/accrepfs.vampire/data/sbcs/guoz18/GWASsummary/Cancer/Breast_cancer/ \
+--gwas_file_pattern "3race_Overall.tsv.gz" \
+--snp_column SNP \
+--effect_allele_column TEST \
+--non_effect_allele_column OTHER \
+--beta_column BETA \
+--se_column SE  \
+--keep_non_rsid \
+--output_file /panfs/accrepfs.vampire/data/sbcs/guoz18/GWASsummary/Cancer/Breast_cancer/TWAS/3race_Overall_EUR_model.csv
